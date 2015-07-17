@@ -1,13 +1,11 @@
 <?php
 
+// extract input from stdin
 $str = file_get_contents("php://stdin");
 
+// parse config
 $jsonstr = file_get_contents("config.json");
-
 $jsondata = json_decode($jsonstr, true);
-
-var_dump($jsondata);
-
 $pres = $jsondata["pres"];
 $posts = $jsondata["posts"];
 
@@ -27,7 +25,7 @@ function wrap( $text, $options ) {
 function parsehtml( $text ) {
 	global $str;
 	$regex = "/({%=\(([a-z]*),?\)(.*)%})/";
-	$regex = "/{%=\(((([a-z]*),?)*)\)((?:[^{}]+|(?R))*)%}/";
+	$regex = "/{%=\(((([a-z0-9]*),?)*)\)((?:[^{}]+|(?R))*)%}/";
 	preg_match_all($regex, $text, $matches, PREG_SET_ORDER);
 	$processing = true;
 	while( $processing ) {
