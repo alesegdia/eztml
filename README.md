@@ -2,7 +2,7 @@
 
 ## Why?
 
-When writing some slides using `reveal.js`, I found some issues trying to use CSS classes, so
+When writing slides using `reveal.js`, I found some issues trying to use CSS classes, so
 thought on making this little project for fun and (very little) profit. I know there are tools like
 zen coding, and it works great in vim, but this was a small and funny project.
 
