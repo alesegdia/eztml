@@ -1,6 +1,6 @@
 {
 	"pres":{
-		"c":"<span='someclass'>",
+		"c":"<span class='someclass'>",
 		"i":"<i>",
 		"b":"<b>",
 		"tt":"<pre>",

@@ -15,8 +15,8 @@ PHP-cli 5.2+ or less with json support.
 
 ## Usage
 
-You can use this script to avoid opening and closing html tags. There is a `config.json` file where you can
-set options pre-wrap and post-wrap text. Check `config.json` to easily see how it works.
+You can use this script to avoid opening and closing html tags. There is a `eztml_config.json` file where you can
+set options pre-wrap and post-wrap text. Check `eztml_config.json` to easily see how it works.
 
 It is intended to be used with `stdin`, so an example that you can run:
 
@@ -24,7 +24,7 @@ It is intended to be used with `stdin`, so an example that you can run:
 cat test.html | php eztml.php > test_out.html
 ```
 
-This way and with the example config.json, you will turn this...
+This way and with the example `eztml_config.json`, you will turn this...
 
 ```
 <p>This is {(b) a test {(i)to show} how this little }and dummy script works</p>

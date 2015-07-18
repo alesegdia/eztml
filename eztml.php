@@ -4,7 +4,7 @@
 $str = file_get_contents("php://stdin");
 
 // parse config
-$jsonstr = file_get_contents("config.json");
+$jsonstr = file_get_contents("eztml_config.json");
 $jsondata = json_decode($jsonstr, true);
 $pres = $jsondata["pres"];
 $posts = $jsondata["posts"];
