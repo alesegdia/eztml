@@ -25,7 +25,7 @@ function wrap( $text, $options ) {
 function parsehtml( $text ) {
 	global $str;
 	$regex = "/({%=\(([a-z]*),?\)(.*)%})/";
-	$regex = "/{%=\(((([a-z0-9]*),?)*)\)((?:[^{}]+|(?R))*)%}/";
+	$regex = "/{\(((([a-z0-9]*),?)*)\)((?:[^{}]+|(?R))*)}/";
 	preg_match_all($regex, $text, $matches, PREG_SET_ORDER);
 	$processing = true;
 	while( $processing ) {

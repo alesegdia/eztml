@@ -27,8 +27,8 @@ cat test.html | php eztml.php > test_out.html
 This way and with the example config.json, you will turn this...
 
 ```
-<p>This is {%=(b) a test {%=(i)to show%} how this little %}and dummy script works</p>
-<p>Another paragraph {%=(tt,h1) to show {%=(i,b)that it really%} %}works</p>
+<p>This is {(b) a test {(i)to show} how this little }and dummy script works</p>
+<p>Another paragraph {(tt,h1) to show {(i,b)that it really} }works</p>
 ```
 
 ... into this ...
