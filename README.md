@@ -6,8 +6,14 @@ When writing slides using `reveal.js`, I found some issues trying to use CSS cla
 thought on making this little project for fun and (very little) profit. I know there are tools like
 zen coding, and it works great in vim, but this was a small and funny project.
 
-Enclosing syntax is based on django templates, and personally, I found it more readable than a lot of
-html tags.
+Enclosing syntax is based on curly brackets followed by parentheses, so you will have to take care on
+not using it as literal text. No error check is being done at the moment.
+
+Take a look at an example:
+
+```
+{(a)this is an {(b,c)example of how to use {(d)this tool} effectively}}
+```
 
 ## Requirements
 
