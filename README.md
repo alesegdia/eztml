@@ -12,7 +12,7 @@ not using it as literal text. No error check is being done at the moment.
 Take a look at an example:
 
 ```
-{(a)this is an {(b,c)example of how to use {(d)this tool} effectively}}
+{(a)this is an {(baz,c)example of how to use {(foo)this tool} properly}}
 ```
 
 ## Requirements
