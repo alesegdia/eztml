@@ -16,7 +16,12 @@ PHP-cli 5.2+ or less with json support.
 ## Usage
 
 You can use this script to avoid opening and closing html tags. There is a `eztml_config.json` file where you can
-set options pre-wrap and post-wrap text. Check `eztml_config.json` to easily see how it works.
+set options pre-wrap and post-wrap text. Check `eztml_config.json` to easily see how it works. Ideally, you will
+keep your own modified config file in your working directory, and use it like:
+
+```
+php path/to/eztml/eztml.php
+```
 
 It is intended to be used with `stdin`, so an example that you can run:
 
